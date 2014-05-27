@@ -1,0 +1,78 @@
+# ignore phpstorm ide files
+.idea
+.vagrant
+
+# ignore vim files, vim backups, other backups:
+*.swp
+*~
+*.bak
+.~lock.*
+
+# log files
+*.log
+
+# cache files, minified files
+zend_cache*
+/website/var/tmp/minified_*
+
+# pimcore config file
+/website/var/config/system.xml
+/website/var/config/cache.xml
+
+# versions
+/website/var/versions/document/*
+/website/var/versions/object/*
+/website/var/versions/asset/*
+
+/website/var/tmp/**/
+/website/var/tmp/*.zip
+/website/var/tmp/*.png
+/website/var/tmp/*.jpeg
+/website/var/tmp/*.xml
+/website/var/tmp/*.css
+
+/website/var/config/extensions.xml
+/website/var/config/imagepipelines/
+
+# db schema migrations
+/website/var/system/*.sql
+
+# generated classes
+/website/var/classes/**
+
+# trash
+/website/var/recyclebin/**
+
+# assets
+/website/var/assets/*
+
+# Website config
+/website/var/config/website.xml
+/website/var/config/reports.xml
+/website/var/config/object/*
+
+# google api token
+/website/var/system/google-api.token
+
+# maintenance
+/website/var/system/maintenance.pid
+
+# Locales
+/website/var/config/texts/*
+/website/var/system/import_translations*
+
+# pimcore system
+/pimcore
+
+# temp files
+/website/var/tmp/asset_*
+
+# backups
+/website/var/backup/*.tar
+
+# csv import files
+/website/var/system/import_*
+
+# keep these two at the end of this file!
+!.keep
+!.dummy
